@@ -5,8 +5,6 @@ import {ActionCreators} from './../actions';
 export default function CommonContainer(ComposedComponent) {
   class CommonContainer extends React.Component {
     render() {
-      console.log('Container called', this.props);
-      debugger;
       return <ComposedComponent {...this.props} />;
     }
   }
